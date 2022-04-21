@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Dashboard from "./Dashboard";
 
 function App() {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row justify-content-center">
                 {/* Components go here */}
-                <h1>Components</h1>
+                <Dashboard />
             </div>
         </div>
     );

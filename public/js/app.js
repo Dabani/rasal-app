@@ -5429,24 +5429,274 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/components/Dashboard.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "container",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "container-fluid",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "row justify-content-center",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-        children: "Components"
-      })
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Dashboard__WEBPACK_IMPORTED_MODULE_2__["default"], {})
     })
   });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./resources/js/components/Dashboard.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Dashboard.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Dashboard = function Dashboard() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("nav", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "nav nav-tabs",
+        id: "nav-tab",
+        role: "tablist",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-members-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-members",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-members",
+          "aria-selected": "true",
+          children: "Members"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-fellows-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-fellows",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-fellows",
+          "aria-selected": "false",
+          children: "Fellows"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-commissions-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-commissions",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-commissions",
+          "aria-selected": "false",
+          children: "Commissions"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-projects-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-projects",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-projects",
+          "aria-selected": "false",
+          children: "Projects"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-events-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-events",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-events",
+          "aria-selected": "true",
+          children: "Events"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-campaigns-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-campaigns",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-campaigns",
+          "aria-selected": "false",
+          children: "Campaigns"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-meetings-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-meetings",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-meetings",
+          "aria-selected": "false",
+          children: "Meetings"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-reports-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-reports",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-reports",
+          "aria-selected": "true",
+          children: "Reports"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-requisitions-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-requisitions",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-requisitions",
+          "aria-selected": "false",
+          children: "Requisitions"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-orders-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-orders",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-orders",
+          "aria-selected": "false",
+          children: "Orders"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-invoices-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-invoices",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-invoices",
+          "aria-selected": "false",
+          children: "Invoices"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-mailing-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-mailing",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-mailing",
+          "aria-selected": "false",
+          children: "Mailing"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "nav-link",
+          id: "nav-partners-tab",
+          "data-bs-toggle": "tab",
+          "data-bs-target": "#nav-partners",
+          type: "button",
+          role: "tab",
+          "aria-controls": "nav-partners",
+          "aria-selected": "false",
+          children: "Partners"
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "tab-content",
+      id: "nav-tabContent",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade show acive",
+        id: "nav-members",
+        role: "tabpanel",
+        "aria-labelledby": "nav-members-tab",
+        children: "I'm in Members' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-fellows",
+        role: "tabpanel",
+        "aria-labelledby": "nav-fellows-tab",
+        children: "I'm in Fellows' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-commissions",
+        role: "tabpanel",
+        "aria-labelledby": "nav-commissions-tab",
+        children: "I'm in Commissions' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-projects",
+        role: "tabpanel",
+        "aria-labelledby": "nav-projects-tab",
+        children: "I'm in Projects' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-events",
+        role: "tabpanel",
+        "aria-labelledby": "nav-events-tab",
+        children: "I'm in Events' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-campaigns",
+        role: "tabpanel",
+        "aria-labelledby": "nav-campaigns-tab",
+        children: "I'm in Campaigns' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-meetings",
+        role: "tabpanel",
+        "aria-labelledby": "nav-meetings-tab",
+        children: "I'm in Meetings' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-reports",
+        role: "tabpanel",
+        "aria-labelledby": "nav-reports-tab",
+        children: "I'm in Reports' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-requisitions",
+        role: "tabpanel",
+        "aria-labelledby": "nav-requisitions-tab",
+        children: "I'm in Requisitions' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-invoices",
+        role: "tabpanel",
+        "aria-labelledby": "nav-invoices-tab",
+        children: "I'm in Invoices' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-mailing",
+        role: "tabpanel",
+        "aria-labelledby": "nav-mailing-tab",
+        children: "I'm in Mailing' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-partners",
+        role: "tabpanel",
+        "aria-labelledby": "nav-partners-tab",
+        children: "I'm in Partners' Tab"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tab-pane fade",
+        id: "nav-orders",
+        role: "tabpanel",
+        "aria-labelledby": "nav-orders-tab",
+        children: "I'm in Orders' Tab"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dashboard);
 
 /***/ }),
 
