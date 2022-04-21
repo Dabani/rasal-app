@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Index from './members/Index';
 
 const Dashboard = () => {
   return (
@@ -172,7 +173,7 @@ const Dashboard = () => {
                   role="tabpanel"
                   aria-labelledby="nav-members-tab"
               >
-                  I'm in Members' Tab
+                  <Index />
               </div>
               <div
                   className="tab-pane fade"
