@@ -1,17 +1,31 @@
+import axios from "axios";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import TableRow from "./TableRow";
 
 class Index extends Component {
-
-    constructor(){
+    constructor(props) {
         super(props);
 
         this.state = {
             members: [],
-        }
+        };
     }
 
-    getMembersList = () => {}
+    // Lifecycle method
+    componentDidMount() {
+        this.getMembersList();
+    }
+
+    // Get Member List
+    getMembersList = () => {
+        let self = this;
+        axios.get("/get/member/list").then((response) => {
+            self.setState({
+                members: response.data,
+            });
+        });
+    };
 
     render() {
         return (
@@ -35,18 +49,9 @@ class Index extends Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
+                                    {this.state.members.map((x, i) => {
+                                        return <TableRow key={i} data={x} />;
+                                    })}
                                 </tbody>
                             </table>
                         </div>
